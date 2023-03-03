@@ -31,8 +31,8 @@
   <meta name="twitter:creator:id" content="@Drunirs">
 
   <link rel="apple-touch-icon" sizes="180x180" href="https://hyping.fr/assets/img/favicon.ico">
-  <link rel="icon" type="image/png" href="img/happy_earth_skin.png" sizes="32x32">
-  <link rel="shortcut icon" href="img/header.webp">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/header.webp') }}" sizes="32x32">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/header.webp') }}">
   <meta name="msapplication-TileImage" content="https://hyping.fr/assets/img/favicon.ico">
   <meta name="msapplication-TileColor" content="#E89C1B">
 
@@ -48,9 +48,9 @@
   <script src="https://hyping.fr/assets/js/script.js" defer></script>
   
   <!-- CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/responsive.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/responsive.css') }}" rel="stylesheet">
   <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.0.0/css/pro.min.css" crossorigin="anonymous"> 
   
   <script type="application/ld+json">
@@ -128,7 +128,7 @@
 
         <center>
           <a href="https://discord.gg/hyping">
-            <img src="img/logo.png" alt="Drunirs Logo">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Drunirs Logo">
           </a>
           <br>
           <button type="button" name="button" class="btn btn-ip" onclick="copyToClipBoard()">
@@ -228,7 +228,7 @@
     <div class="row">
       <div class="col-lg-4">
         <br><br>
-        <img src="img/tktEarth.png" alt="Image argument 1" class="phone-hide">
+        <img src="{{ url_for('static', filename='img/tktEarth.png') }}" alt="Image argument 1" class="phone-hide">
       </div>
       <div class="col-lg-2">
 
@@ -318,15 +318,15 @@
 
         <!-- Description arguement -->
         <p>
-          Drunirs is a Discord Server with <strong id="discordCount">more than 2</strong> members !
+          Drunirs is a Discord Server with <strong id="discordCount">more than *NUMBER*</strong> members !
         </p>
         <p>
-          We are a chill community where you can engage in discussions, ask for help, and tips on gameplay !
-          You can also come <span class="bold">ask question</span> at our teams.
+          We are a chill community where you can engage in discussions and have some tips on gameplay !
+          You can also come <span class="bold">ask question</span> to our teams.
         </p>
 
         <!-- Bouton arguement -->
-        <a href="https://discord.gg/hyping" class="btn btn-default phone-large">Join the Discord</a>
+        <a href="https://discord.gg/3f8uG5UCBU" class="btn btn-default phone-large">Join the Discord</a>
 
         <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
         <script type="text/javascript">
